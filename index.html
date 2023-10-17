@@ -9,12 +9,15 @@
     />
     <meta name="keywords" content="Cyberpunk, Exosceleton, Order" />
     <meta name="author" content="Marco Meijer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <img
-        src="./Cybertrucklogo.svg"
+        src="./cybertruckLogo.png"
         alt="cybertruck logo"
         width="411px"
         height="271px"
@@ -49,23 +52,23 @@
             height="388px"
           />
         </section>
+        <form>
+          <div>
+            <h2>Order your cybertruck</h2>
+          </div>
+          <div class="formFields">
+            <div class="field">
+              <label for="name">NAME:</label>
+              <input id="name" name="name" type="text" class="textField" />
+            </div>
+            <div class="field">
+              <label for="email">EMAIL:</label>
+              <input id="email" name="email" type="email" class="textField" />
+            </div>
+            <input type="submit" value="Order" class="orderButton" />
+          </div>
+        </form>
       </article>
-      <form>
-        <div>
-          <h2>Order your cybertruck</h2>
-        </div>
-        <div>
-          <label for="name">NAME:</label>
-          <input id="name" name="name" type="text" />
-        </div>
-        <div>
-          <label for="email">EMAIL:</label>
-          <input id="email" name="email" type="email" />
-        </div>
-        <div>
-          <input type="submit" />
-        </div>
-      </form>
     </main>
 
     <footer>
